@@ -1,0 +1,37 @@
+body {
+    position: relative;
+}
+.footer-social li {
+    float: inherit;
+    height: inherit;
+    line-height: inherit;
+    text-align: right;
+}
+
+#flashbox1 ul {
+    text-align: center;
+}
+
+.navbar-scroll {
+    position: fixed;
+    bottom: 255px;
+    left: 40px;
+    font-size: 16px;
+    z-index: 999;
+}
+
+.nav-product {
+    list-style-type: none;
+    /*width: 150px;*/
+    text-align: center;
+    /*margin: 0 10px;*/
+    /*padding:0px 0px 45px 5px;*/
+    /*border-radius: 5px;*/
+}
+.nav-product ul {
+    text-align: center;
+}
+.nav-product ul img {
+    width:75%;
+    margin-bottom: 60px;
+}

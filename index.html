@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="icon" href="static/images/favicons.ico"/>
+    <link rel="shortcut icon" href="static/images/favicons.ico"/>
+    <meta name="keywords" content="易饭｜efan｜自动售货机｜饮料机｜自动售餐机｜自动售货亭｜食品饮料机｜开放平台｜云服务｜智能售货机｜富士冰山｜中吉｜易贩"/>
+    <meta name="description"
+          content="易饭（yifan），国内领先的联网自动售货机系统，易饭（yifan）专为自动售货手机购物推出微信端，不但提供更流畅的支付，购买体验，并且还提供低价，免费赠饮等互动优惠活动．易饭自动售货机，饮料机旨在为千万人群提供新鲜，便捷的食品饮品零售服务."/>
+    <link href="static/css/meda.css" rel="stylesheet"/>
+    <link href="static/css/animate.css" rel="stylesheet"/>
+    <script src="static/js/jquery.1.10.2.js"></script>
+    <script src="static/js/meda.1.0.js"></script>
+    <script src="static/js/json2.js"></script>
+    <link href="static/css/smallslider.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="static/js/jquery.smallslider.js"></script>
+    <link href="static/css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="static/css/product.css">
+    <!--[if lte IE 8]>
+    <script src="/static/js/html5.js"></script>
+    <script src="/static/js/excanvas.min.js"></script>
+    <![endif]-->
+    <!-- <script src="/static/js/pageLoad.js"></script> -->
+    <script>
+        $(function () {
+            // $('body').keydown(function(){
+            // 	var c = event || window.event;
+            // 	if(c.keyCode == 116){
+            // 		$('.loadingBar_bg').hide();
+            // 	}
+            // })
+            var num1 = parseInt(Math.random() * 20 + 80);
+            var num2 = parseInt(Math.random() * 39 + 40);
+            $('.loadingBar').animate({width: num1 + '%'}, 600).delay(300).animate({width: num2 + '%'}, 200).delay(600).animate({width: '0'}, 200, function () {
+                $('.loadingBar_bg').hide();
+            });
+
+        })
+    </script>
+    <title>
+        自动售货机_无人售货机_自动售餐机－易饭－中国领先的自动售货机系统服务提供商　金融服务提供商　自动贩卖机　自动售卖机
+    </title></head>
+<body >
+<div class="layout">
+    <div class="header">
+        <div class="navigation">
+            <div class="header-logo"><a href="/efancloud.html">
+                <img src="static/images/logo.png" alt="yi" /></a></div>
+
+            <ul class="header-nav" data-target="nav">
+                <!--<li id="header_home_nav_home"><a href="index.html">首页</a></li>-->
+                <li id="header_home_nav_efancloud" class="nav-active"><a href="efancloud.html">易贩云</a></li>
+                <!--<li id="header_home_nav_about">-->
+                <!--<a href="solution.html">解决方案</a>-->
+                <!--</li>-->
+                <!--<li id="header_home_nav_news"><a href="product.html">产品介绍</a></li>-->
+                <!--<li id="header_home_nav_service"><a href="cooperate.html">加盟eFan</a></li>-->
+
+                <!--<li id="header_home_nav_join"><a href="join.html">加入我们</a></li>-->
+                <li id="header_home_nav_contract" ><a href="about.html">关于我们</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="width: 100%; ">
+        <div class="nav-product">
+            <ul>
+                <li id='cj'><img src="static/images/efancloud_1.jpeg" alt="图片标题1"/></li>
+                <li id='gzg'><img src="static/images/efancloud_2.jpeg" alt="图片标题1"/></li>
+                <li id='zhj'><img src="static/images/efancloud_3.jpeg" alt="图片标题1"/></li>
+                <li id='jj'><img src="static/images/efancloud_4.jpeg" alt="图片标题1"/></li>
+                <li id='cgj'><img src="static/images/efancloud_5.jpg" alt="图片标题1"/></li>
+                <li id='jnb'><img src="static/images/efancloud_6.jpg" alt="图片标题1"/></li>
+                <li id='adj'><img src="static/images/efancloud_banner.jpg" alt="图片标题1"/></li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <div class="toTop"><a onclick="pageScroll()"></a></div>
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cspan id='cnzz_stat_icon_1256648206'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1256648206' type='text/javascript'%3E%3C/script%3E"));</script>
+
+</div>
+<script type="text/javascript" src="static/js/app.js?t=1439551903636"></script>
+<script type="text/javascript">seajs.use('apps/news')</script>
+<script type="text/javascript">
+    $(function () {
+        // 指定跳转的位置
+//        var index = window.location.search;
+//        console.log(index);
+//        if(index.split('?')[1]=='2'){
+//            location.href='#cgj'
+//        }
+
+
+        $('.ui-list-history').find('li').removeClass('ui-history-active').eq(0).addClass('ui-history-active');
+    })
+
+    //跳转页面
+    function Redirect(id, channel_id) {
+        var pageIndex = $('.ui-list-history li').index($('.ui-list-history').find('.ui-history-active'));
+        pageIndex = pageIndex + 1;
+        location.href = 'news_detail.aspx?id=' + id + '&channel_id=' + channel_id + '&pageIndex=' + (pageIndex++);
+    }
+    // 隐藏站长统计
+    $('#cnzz_stat_icon_1256648206').hide()
+</script>
+</body>
+</html>
